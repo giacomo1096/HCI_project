@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/litePurple">
+        <TextView
+            android:id="@+id/msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="20dp"
+            android:textSize="20dp"
+            android:textColor="@color/purple"
+            android:textAlignment="center"
+            android:fontFamily="@font/heebo_medium"
+            android:text="ClubbyCloset is a mobile application that allows you to find ideas and share advice about outfits to wear in different circumstances.
+    An idea of Giulia Del Citto, Giorgia Di Pietro and Giacomo Acitelli, students of Human-Computer Interactions elective from the M.Sc. in Eng. in Computer Science at La Sapienza University of Rome.
+                                                           Join the club!"
+            android:gravity="center_vertical"
+            tools:ignore="RtlCompat" />
+    </LinearLayout>
+</RelativeLayout>

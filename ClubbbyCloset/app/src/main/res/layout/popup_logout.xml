@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/litePurple">
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="      Do you want "
+                        android:gravity="center_vertical"
+                        tools:ignore="RtlCompat" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="15dp"
+                        android:textSize="20dp"
+                        android:textColor="@color/purple"
+                        android:textAlignment="center"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="to logout?"
+                        android:gravity="center_vertical"
+                        tools:ignore="RtlCompat" />
+            </TableRow>
+            <TableRow>
+                    <TextView
+                        android:id="@+id/byes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="Yes"
+                        android:textColor="@color/purple"
+                        android:textSize="23dp"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"/>
+                    <TextView
+                        android:id="@+id/bno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/heebo_medium"
+                        android:text="No"
+                        android:textColor="@color/purple"
+                        android:textSize="23dp"
+                        android:layout_margin="8dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="5dp"
+                        android:clickable="true"/>
+            </TableRow>
+
+        </TableLayout>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

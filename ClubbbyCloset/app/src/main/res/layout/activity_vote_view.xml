@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".voteView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toTopOf="@id/bottomAppBar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/purple">
+
+                <TextView
+                    android:id="@+id/voteView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="left"
+                    android:text="New Poll"
+                    android:textColor="@color/ice"
+                    android:textSize="22dp" />
+
+                <TextView
+                    android:id="@+id/save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="235dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="5dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/heebo_medium"
+                    android:gravity="right"
+                    android:text="Save"
+                    android:textColor="@color/ice"
+                    android:textSize="22dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/menu"
+                        android:layout_width="20dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:clickable="true"
+                        android:src="@drawable/menu"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TableLayout
+                    android:id="@+id/tableLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+                    <TableRow
+                        android:id="@+id/row11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+                        <ImageView
+                            android:id="@+id/foto1"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:clickable="true" />
+
+                        <ImageView
+                            android:id="@+id/foto2"
+                            android:layout_width="200dp"
+                            android:layout_height="300dp"
+                            android:clickable="true" />
+                    </TableRow>
+                    <TableRow
+                        android:id="@+id/row12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+                        <TextView
+                            android:id="@+id/left_vote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/heebo_medium"
+                            android:textSize="18dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="RESULT"/>
+                        <TextView
+                            android:id="@+id/right_vote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/purple"
+                            android:fontFamily="@font/heebo_medium"
+                            android:textSize="18dp"
+                            android:layout_gravity="center_horizontal"
+                            android:text="RESULT"/>
+                    </TableRow>
+
+            </TableLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edesc"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="17dp"
+                    />
+                <EditText
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:textColor="@color/purple"
+                    android:textColorHint="@color/purple"
+                    android:fontFamily="@font/heebo_medium"
+                    android:hint="Description"
+                    android:background="@null"
+                    android:imeOptions="actionNext"
+                    android:inputType="text"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/elocation"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="17dp"
+                    />
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:fontFamily="@font/heebo_medium"
+                    android:layout_marginLeft="8dp"
+                    android:background="@null"
+                    android:textColorHint="@color/purple"
+                    android:hint="Location"
+                    android:imeOptions="actionNext"
+                    android:inputType="text" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/etime"
+                    android:layout_marginLeft="6dp"
+                    android:textSize="17dp"
+                    />
+                <EditText
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/purple"
+                    android:background="@null"
+                    android:layout_marginLeft="8dp"
+                    android:textColorHint="@color/purple"
+                    android:fontFamily="@font/heebo_medium"
+                    android:hint="Time "
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@color/purple">
+
+        <TableLayout
+            android:id="@+id/tableLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/home"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:clickable="true"
+                    android:src="@drawable/home"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+                    app:layout_constraintLeft_toLeftOf="@+id/bottomAppBar" />
+
+                <ImageView
+                    android:id="@+id/search"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:clickable="true"
+                    android:src="@drawable/search"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+                    app:layout_constraintLeft_toLeftOf="@+id/home"
+                    app:layout_constraintRight_toRightOf="@id/add" />
+
+                <ImageView
+                    android:id="@+id/add"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:clickable="true"
+                    android:src="@drawable/add"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+                    app:layout_constraintLeft_toLeftOf="@+id/vote"
+                    app:layout_constraintRight_toRightOf="@id/search" />
+
+                <ImageView
+                    android:id="@+id/vote"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:clickable="true"
+                    android:src="@drawable/vote"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="@id/profile"
+                    app:layout_constraintRight_toRightOf="@id/add" />
+
+                <ImageView
+                    android:id="@+id/profile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="35dp"
+                    android:clickable="true"
+                    android:src="@drawable/profile"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomAppBar"
+                    app:layout_constraintRight_toRightOf="@+id/bottomAppBar" />
+
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

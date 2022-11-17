@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addImg"
+        android:title="New photo"
+        >
+        <menu>
+            <item android:id="@+id/fromGallery" android:title="Add photo from gallery"></item>
+            <item android:id="@+id/takePicture" android:title="Take a picture"></item>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/addVote"
+        android:title="New poll">
+        <menu>
+            <item android:id="@+id/voteFromGallery" android:title="Add photos from gallery"></item>
+            <item android:id="@+id/takePictures" android:title="Take pictures"></item>
+        </menu>
+    </item>
+
+
+</menu>
